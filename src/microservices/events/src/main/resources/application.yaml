@@ -1,0 +1,42 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: events-service
+
+  kafka:
+    bootstrap-servers: ${KAFKA-BROKERS}
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+      properties:
+        spring.json.type.mapping: >
+          userEvent:com.cinemaabyss.events.model.UserEvent,
+          paymentEvent:com.cinemaabyss.events.model.PaymentEvent,
+          movieEvent:com.cinemaabyss.events.model.MovieEvent
+        spring.json.add.type.headers: true
+
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: events-service-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      properties:
+        spring.json.type.mapping: >
+          userEvent:com.cinemaabyss.events.model.UserEvent,
+          paymentEvent:com.cinemaabyss.events.model.PaymentEvent,
+          movieEvent:com.cinemaabyss.events.model.MovieEvent
+        spring.json.trusted.packages: "com.cinemaabyss.events.model"
+        spring.json.add.type.headers: true
+    listener:
+      ack-mode: MANUAL
+
+logging:
+  level:
+    com.cinemaabyss.events: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
