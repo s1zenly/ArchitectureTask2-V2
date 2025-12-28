@@ -135,11 +135,11 @@ spec:
           name: kafka
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "200m"
-          limits:
             memory: "1Gi"
-            cpu: "1000m"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "2"
         env:
         - name: KAFKA_ADVERTISED_LISTENERS
           value: PLAINTEXT://kafka:9092
@@ -157,6 +157,8 @@ spec:
           value: "1"
         - name: KAFKA_LOG_DIRS
           value: "/kafka/kafka-logs"
+        - name: KAFKA_HEAP_OPTS
+          value: "-Xms1G -Xmx2G"
         volumeMounts:
         - name: kafka-data
           mountPath: /kafka
