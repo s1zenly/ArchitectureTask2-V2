@@ -23,7 +23,11 @@ bin/
 *.class
 *.jar
 
+# Исключения для Gradle wrapper
+!gradlew
+!gradlew.bat
 !gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 
 # Compiled Object files, Static and Dynamic libs
