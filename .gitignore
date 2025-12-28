@@ -23,6 +23,8 @@ bin/
 *.class
 *.jar
 
+!gradle/wrapper/gradle-wrapper.jar
+
 
 # Compiled Object files, Static and Dynamic libs
 *.o
