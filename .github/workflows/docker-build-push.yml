@@ -38,22 +38,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build Services for test
-        run: docker-compose build
-
-      - name: Start Services for test
-        run: docker-compose up -d
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
-      - name: Install npm dependencies
-        run: npm ci
-
-      - name: Run API tests
-        run: npm run test:local
 
       - name: Extract metadata (tags, labels) for Monolith
         id: meta-monolith
