@@ -59,6 +59,11 @@
 Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
 Приложите скриншот тестов и скриншот состояния топиков Kafka из UI http://localhost:8090 
 
+![KafkaUI-1](screenshots/kafka-ui-1.png)
+![KafkaUI-2](screenshots/kafka-ui-2.png)
+![KafkaUI-3](screenshots/kafka-ui-3.png)
+![Tests](screenshots/kafka-tests.png)
+
 # Задание 3
 
 Команда начала переезд в Kubernetes для лучшего масштабирования и повышения надежности. 
@@ -109,6 +114,7 @@ jobs:
 Как только сборка отработает и в github registry появятся ваши образы, можно переходить к блоку настройки Kubernetes
 Успешным результатом данного шага является "зеленая" сборка и "зеленые" тесты
 
+![CI/CD](screenshots/ci:cd.png)
 
 ### Proxy в Kubernetes
 
@@ -275,6 +281,8 @@ cat .docker/config.json | base64
 #### Шаг 3
 Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
 
+![Результат вызова](screenshots/kubernetes-curl.png)
+![Логи events](screenshots/kubernetes-events-log.png)
 
 # Задание 4
 Для простоты дальнейшего обновления и развертывания вам как архитектуру необходимо так же реализовать helm-чарты для прокси-сервиса и проверить работу 
@@ -349,6 +357,9 @@ minikube tunnel
 Потом вызовите 
 https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
+
+![Развертывание Helm](screenshots/helm-success.png)
+![Результат вызова с Helm](screenshots/helm-curl.png)
 
 ## Удаляем все
 
