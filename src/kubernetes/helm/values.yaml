@@ -5,7 +5,7 @@ global:
 
 # Image pull secrets
 imagePullSecrets:
-  dockerconfigjson: ewoJImF1dGhzIjogewoJCSJnaGNyLmlvIjogewoJCQkiYXV0aCI6
+  dockerconfigjson: ewoJImF1dGhzIjogewoJCSJnaGNyLmlvIjogewoJCQkiYXV0aCI6ICJjekY2Wlc1c2VUcG5hSEJmU2tkWVdHczNVVVF5YWpSd1RYSmtia2xNUzBoVWNGQTRWVEZDWjBZNE1FWXhja2cyIgoJCX0KCX0sCgkiY3VycmVudENvbnRleHQiOiAiY29saW1hIgp9
 # Database configuration
 database:
   host: postgres
@@ -33,7 +33,7 @@ database:
 monolith:
   enabled: true
   image:
-    repository: ghcr.io/db-exp/cinemaabysstest/monolith
+    repository: ghcr.io/s1zenly/architecturetask2-v2/monolith
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -53,7 +53,7 @@ monolith:
 proxyService:
   enabled: true
   image:
-    repository: ghcr.io/db-exp/cinemaabysstest/proxy-service
+    repository: ghcr.io/s1zenly/architecturetask2-v2/proxy-service
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -73,7 +73,7 @@ proxyService:
 moviesService:
   enabled: true
   image:
-    repository: ghcr.io/db-exp/cinemaabysstest/movies-service
+    repository: ghcr.io/s1zenly/architecturetask2-v2/movies-service
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -93,7 +93,7 @@ moviesService:
 eventsService:
   enabled: true
   image:
-    repository: ghcr.io/db-exp/cinemaabysstest/events-service
+    repository: ghcr.io/s1zenly/architecturetask2-v2/events-service
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -119,11 +119,11 @@ kafka:
   replicas: 1
   resources:
     limits:
-      cpu: 1000m
-      memory: 1Gi
+      cpu: "2"
+      memory: "2Gi"
     requests:
-      cpu: 200m
-      memory: 512Mi
+      cpu: "500m"
+      memory: "1Gi"
   persistence:
     enabled: true
     size: 5Gi
@@ -183,3 +183,6 @@ config:
   # Strangler Fig configuration
   gradualMigration: "true"
   moviesMigrationPercent: "100"
+  kafka:
+    host: kafka
+    port: 9092
