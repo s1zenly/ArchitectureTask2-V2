@@ -180,6 +180,8 @@ spec:
           value: "1"
         - name: KAFKA_LOG_DIRS
           value: "/kafka/kafka-logs"
+        - name: KAFKA_HEAP_OPTS
+          value: "-Xms1G -Xmx2G"
         volumeMounts:
         - name: kafka-data
           mountPath: /kafka

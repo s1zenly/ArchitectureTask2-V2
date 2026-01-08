@@ -15,6 +15,17 @@ go.work
 # Go build and test cache
 .go/
 
+# Java and Gradle
+.gradle/
+build/
+out/
+bin/
+*.class
+*.jar
+
+!gradle/wrapper/gradle-wrapper.jar
+
+
 # Compiled Object files, Static and Dynamic libs
 *.o
 *.a

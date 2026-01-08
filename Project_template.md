@@ -5,7 +5,7 @@
 1. Спроектируйте to be архитектуру КиноБездны, разделив всю систему на отдельные домены и организовав интеграционное взаимодействие и единую точку вызова сервисов.
 Результат представьте в виде контейнерной диаграммы в нотации С4.
 Добавьте ссылку на файл в этот шаблон
-[ссылка на файл](ссылка)
+   [C4-container](http://www.plantuml.com/plantuml/uml/hLXFSzk-4RthK-3doKoTcSW-jBrq9ZDnP3b_QiUofJZ734IkH3OWm0AW7BVkT-y2N30GJCjKzFE59B3xtku2UD3wdR5SswOIepzAcOac1rPOMvj_d9vgVd-oBctHB1i3EbFIWhGdcQfEQy6bynaRcujoUJhvstZcXhvUNPvMt5ZGEFHzWXwybA1FQeS_-YE75Nwoy-dTfydrb_a08jlKFDT__KLOuknuXHPZK-lIWWbyEMpSdEbOBgw_BCw-JUVNLzC_bSYFyNimgeBntqUZqGoqKVBO8RvXHnFahZXpNqVuYS-SPUqOh-kZr-WmVq2WwljxrSYSwuVZTheT_OLmvgpPVqSZnlx2Ljh7chCbEU5evnycqVU2Nhqdmxzk3Oxh317Hv1iiCR1N5h92lZtwF7zSpDrt3YRJRudSi7jOZZ5UKMRSbafYtDjeTjEYBUuYi7ygAqhPWxQuOxl0AhKi1NZ007NbXuvSIgAn5dI76kQU8FwlBTNxYulUAYrNAqHpivVy0NHlXN2shP13YHBxe2BwivpNrh2SMyvMIZCq7vVIWbxn37eAvK6nKFjWedK7-OPLNF8r6BOfSr3CM0syCizKqRDHYVPX98-EDIvfLMPQ6T1umi2COiurjt3F7v3nRFQ9VMY_sBmrVOvwKG2hjVhvKCerup9dGd7SsLnmcRaXOi88OYhUsCBnu4FfyZz-tOSm4HghGMEUbM4yHl3y6z3bgWJ3R07-vBArvjAQKFaAf4KSOz31964vSuDnVSNdFk4KI2oGKiE_6p3M-4Nmt7v9SDRLQ5KAY898k77511RCRUlsxU00QlvGWS_SSgp9olX031UGvbs1vIvIjzdezM1s4cGMiDanpwnovLs3r81FpIscQLudmP3ZN3Kw0x_zSz3j-au8Su_OSX3b1hIXUBhIQ2kTnAiQvDXuAbBsjafLHneSqoYvvKAvvPhujyEN2xT7PHZX9comQHVoQEfVNkAQe97cWdatPgpIS89eGa3cKFo02TiIXSXzP1aOmwnYN8XOZbiGjsEyV630pRPktBYHi6h-0-CCA-M_urk5htxmE5Aoyx1zOa7uL062fpAyX4vcFb--XfQ44l4dSydDTYxdIozDvyidudHEvX7RJ1cxrZ2_kOmevyJLgO_3wsI0jCWdc99EU5R04ru_siT-2tbf8c9lsALA0iUi-W7oALzZt8EKpkoTNEEzQlzRYGkVNKeHzCopaABjpKEwzSQB5crO4ZLFUcerbuPdlb9uQfuc6jJ7Xn6qRUyu0WhZIzNOzgHkovbNC_0HWirEqZY2NFWmQC_l7GNfKof8AKVOHqJpkpkeLdKZk0vidLQbj7GoVMPqteOcTgdaUcn1LnsfMWMvwMUXt0BHHqNfxSXgNYXjMvO2pRCuoMTOvi1rLiGPjIDzYKq5DxRCZ3Vefstd_DxWaei7Pqvna0YrWOpm5reNpFVfJtjCrvGJ_cifS7XC_SIC9i95aDmpOStQYmsBcU1go5HLWSoznY3wxTR0CwZmqu9svttRlLFjb2KSLSIVqMiFyZIWahcxaZ1cu_I2Vf4woTw-3dgoyEDFKqclY5k-N9RswYQA8F58hoByYtes3SARcT4j2EeJgHjx9VWIn5lKL5VoQDvkTizJozHZ4pEF6Q_BK98a3eg09d_1NF4VuDqoBeIxtQDA_Cie-UYRQGg6mZmCX78v30ZJZdCTRpSjIUuTZMygEh9PQ4fi0K6yTWNUmOGVueSZKJjnC0xriW7dLZKMV5SVKCmW6BlfWrdSxOL2cxK7YMPsej7YxbfEIZPSkH4BuT8KjRfOXLrX4nfTZJrWD3C4osw6HvQq_RjXXuL8e2yVlhsYR5q6WGw8SI1aTyH8y-D3qge_c6wEsKAhPbti0anwHhet8zWBi5c1e6JeLBKQl477T2Tq6xMFCsw0edIQfIYDOvPm7spIZeLXqdcJWNvSJ6QKKIjcrFNimdI6P3S4bpHf0B2pt0EOTi0WQB8TZauxPXWwsUw17ax48FXW_1krINuv9JGJ9KrJjIo9fUdv1SF8NZ-UNTq4fcstNOHnNeaPS-drCL9gn9ZaHfkxDwbqtQNL9Jmj7HdtBirk_4ZLcXeVmy3R5KnNFKMcVuYGrN3SmTN7qX2urq_V99ZI35Y1_TUSeXrEccwqVe6aHYRHI58n-fTAT6lm_FIRBYr4RAurV9quKRktq-zsEa-qpJq6qIKRc5uES1qSRo9gz3A8EJqMuMsuSxBjVzjndsnJP-gnN-J-FB_-ylXniPZD4UKToBofnFy1)
 
 # Задание 2
 
@@ -59,6 +59,11 @@
 Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
 Приложите скриншот тестов и скриншот состояния топиков Kafka из UI http://localhost:8090 
 
+![KafkaUI-1](screenshots/kafka-ui-1.png)
+![KafkaUI-2](screenshots/kafka-ui-2.png)
+![KafkaUI-3](screenshots/kafka-ui-3.png)
+![Tests](screenshots/kafka-tests.png)
+
 # Задание 3
 
 Команда начала переезд в Kubernetes для лучшего масштабирования и повышения надежности. 
@@ -109,6 +114,7 @@ jobs:
 Как только сборка отработает и в github registry появятся ваши образы, можно переходить к блоку настройки Kubernetes
 Успешным результатом данного шага является "зеленая" сборка и "зеленые" тесты
 
+![CI/CD](screenshots/ci:cd.png)
 
 ### Proxy в Kubernetes
 
@@ -275,6 +281,8 @@ cat .docker/config.json | base64
 #### Шаг 3
 Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
 
+![Результат вызова](screenshots/kubernetes-curl.png)
+![Логи events](screenshots/kubernetes-events-log.png)
 
 # Задание 4
 Для простоты дальнейшего обновления и развертывания вам как архитектуру необходимо так же реализовать helm-чарты для прокси-сервиса и проверить работу 
@@ -349,6 +357,9 @@ minikube tunnel
 Потом вызовите 
 https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
+
+![Развертывание Helm](screenshots/helm-success.png)
+![Результат вызова с Helm](screenshots/helm-curl.png)
 
 ## Удаляем все
 
